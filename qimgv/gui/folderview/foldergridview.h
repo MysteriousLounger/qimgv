@@ -14,7 +14,9 @@ public:
     explicit FolderGridView(QWidget *parent = nullptr);
 
     const int THUMBNAIL_SIZE_MIN = 80;  // px
-    const int THUMBNAIL_SIZE_MAX = 400;  // these should be divisible by ZOOM_STEP
+    const int THUMBNAIL_SIZE_MAX = 800;  // these should be divisible by ZOOM_STEP
+    // const int THUMBNAIL_SIZE_MAX_HIDPI = 800; // TODO dynamically set THUMBNAIL_SIZE_MAX to one of these, based on the user's primary display resolution, so that users on 720p screens don't have the option to make thumbnails larger than their entire screen
+    // const int THUMBNAIL_SIZE_MAX_LODPI = 400;
     const int ZOOM_STEP = 20;
     void selectAll();
 
